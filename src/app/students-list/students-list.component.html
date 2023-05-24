@@ -1,0 +1,22 @@
+<div class="p-5">
+    <table class="table table-stripped table-success table-hover">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Phone</th>
+                <th>Email</th>
+                <th>Course</th>
+                <th>Remarks</th>
+            </tr>
+        </thead>
+        <tbody> 
+            <tr *ngFor="let student of students">
+                <td>{{student.fullname}}</td>
+                <td>{{student.phonenumber}}</td>
+                <td>{{student.email}}</td>
+                <td>{{student.course}}</td>
+                <td>{{student.remarks}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

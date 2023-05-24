@@ -1,0 +1,27 @@
+<div class="p-5" [formGroup]="studentForm">
+    <div class="mb-3">
+        <label for="fullname" class="form-label">Full Name</label>
+        <input formControlName="fullname" type="text" class="form-control" id="fullname">
+    </div>
+    <div class="mb-3">
+        <label for="phonenumber" class="form-label">Phone Number</label>
+        <input  formControlName="phonenumber" type="text" class="form-control" id="phonenumber">
+    </div>
+    <div class="mb-3">
+        <label for="email" class="form-label">Email</label>
+        <input formControlName="email" type="text" class="form-control" id="email">
+    </div>
+    
+    <div class="mb-3">
+        <label for="course" class="form-label">Course</label>
+        <input formControlName="course" type="text" class="form-control" id="course">
+    </div>
+    
+    <div class="form-floating">
+        <textarea formControlName="remarks" class="form-control" placeholder="Leave a comment here" id="remarks" style="height: 100px"></textarea>
+        <label for="remarks">Remarks</label>
+    </div>
+    <div class="text-center">
+        <button (click)="addStudent()" type="button" class="btn btn-primary mt-3" >Add Student</button>
+    </div>
+</div>
