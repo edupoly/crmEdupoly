@@ -7,13 +7,15 @@ import { StudentRegistrationComponent } from './student-registration/student-reg
 import { NavbarComponent } from './navbar/navbar.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {HttpClientModule} from '@angular/common/http';
-import { StudentsListComponent } from './students-list/students-list.component'
+import { StudentsListComponent } from './students-list/students-list.component';
+import { EditstudentComponent } from './editstudent/editstudent.component'
 @NgModule({
   declarations: [
     AppComponent,
     StudentRegistrationComponent,
     NavbarComponent,
     StudentsListComponent,
+    EditstudentComponent,
   ],
   imports: [
     BrowserModule,

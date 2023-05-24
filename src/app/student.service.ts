@@ -13,4 +13,10 @@ export class StudentService {
   getStudents(){
     return this.http.get("http://localhost:3000/students")
   }
+  deleteStudent(id:number){
+    return this.http.delete(`http://localhost:3000/students/${id}`)
+  }
+  updateStudent(student:any){
+    return this.http.put(`http://localhost:3000/students/${student.id}`,student)
+  }
 }

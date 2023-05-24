@@ -1,14 +1,6 @@
 {
   "students": [
     {
-      "fullname": "praveen",
-      "phonenumber": "123123",
-      "email": "praveen@edupoly.co",
-      "course": "angular15",
-      "remarks": "sdfsdf",
-      "id": 1
-    },
-    {
       "fullname": "sindhu",
       "phonenumber": "8373",
       "email": "sindhu@edupoly.co",
@@ -19,7 +11,7 @@
     {
       "fullname": "prudvi",
       "phonenumber": "39348",
-      "email": "pr@gmailc.om",
+      "email": "prudvi@gmailc.om",
       "course": "react",
       "remarks": "asdfsdf",
       "id": 3
