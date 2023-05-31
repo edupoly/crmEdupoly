@@ -4,7 +4,7 @@
       "fullname": "sindhu",
       "phonenumber": "8373",
       "email": "sindhu@edupoly.co",
-      "course": "MEAN",
+      "course": "MEAN Stack",
       "remarks": "woieuyr",
       "id": 2
     },
@@ -12,9 +12,67 @@
       "fullname": "prudvi",
       "phonenumber": "39348",
       "email": "prudvi@gmailc.om",
-      "course": "react",
+      "course": "Angular",
       "remarks": "asdfsdf",
       "id": 3
+    },
+    {
+      "fullname": "Shubhangi",
+      "phonenumber": "8882929",
+      "email": "shub@gmailc.om",
+      "course": "Angular",
+      "remarks": "wants to learn angular 18",
+      "id": 4
+    },
+    {
+      "fullname": "Hariprasad",
+      "phonenumber": "3344",
+      "email": "hari@gmail.com",
+      "course": "Java Fullstack",
+      "remarks": "wants to join from July7",
+      "id": 5
+    }
+  ],
+  "courses": [
+    {
+      "title": "Angular",
+      "price": "20000",
+      "id": 1
+    },
+    {
+      "title": "ReactJS",
+      "price": "20000",
+      "id": 2
+    },
+    {
+      "title": "MEAN Stack",
+      "price": "30000",
+      "id": 3
+    },
+    {
+      "title": "MERN Stack",
+      "price": "30000",
+      "id": 4
+    },
+    {
+      "title": "Java Fullstack",
+      "price": "30000",
+      "id": 5
+    },
+    {
+      "title": "Python Fullstack",
+      "price": "30000",
+      "id": 6
+    },
+    {
+      "title": "Python",
+      "price": "10000",
+      "id": 7
+    },
+    {
+      "title": "Java",
+      "price": "10000",
+      "id": 8
     }
   ],
   "posts": [

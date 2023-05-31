@@ -1,4 +1,24 @@
-<div class="p-5">
+<div class="d-flex flex-wrap justify-content-between px-5 py-2">
+    <div>
+        <div>
+            <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                Filter
+            </button>
+        </div>
+        <div class="collapse" id="collapseExample">
+            <div class="p-2">
+                <span *ngFor="let course of allcourses" >
+                    <input (change)="selectCourse($event,course)" type="checkbox" [value]="course['title']">:{{course.title}}
+                </span>
+            </div>
+        </div>
+    </div>
+    <div>
+        <input type="text" [(ngModel)]="skey">
+        <button (click)="searchStudents()">Search</button>
+    </div>
+</div>
+<div class="px-5">
     <table class="table table-stripped table-success table-hover">
         <thead>
             <tr>
@@ -11,15 +31,15 @@
             </tr>
         </thead>
         <tbody> 
-            <tr *ngFor="let student of students">
+            <tr *ngFor="let student of filteredStudents">
                 <td>{{student.fullname}}</td>
                 <td>{{student.phonenumber}}</td>
                 <td>{{student.email}}</td>
                 <td>{{student.course}}</td>
                 <td>{{student.remarks}}</td>
                 <td>
-                    <button (click)="deleteStudent(student.id)">Delete</button>
-                    <button (click)="editStudent(student)">Edit</button>
+                    <i (click)="deleteStudent(student.id)" class="p-1 bi bi-trash-fill"></i>
+                    <i (click)="editStudent(student)" class="p-1 bi bi-pencil-square"></i>
                 </td>
             </tr>
         </tbody>

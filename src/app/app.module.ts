@@ -8,7 +8,8 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {HttpClientModule} from '@angular/common/http';
 import { StudentsListComponent } from './students-list/students-list.component';
-import { EditstudentComponent } from './editstudent/editstudent.component'
+import { EditstudentComponent } from './editstudent/editstudent.component';
+import { AddcourseComponent } from './addcourse/addcourse.component'
 @NgModule({
   declarations: [
     AppComponent,
@@ -16,6 +17,7 @@ import { EditstudentComponent } from './editstudent/editstudent.component'
     NavbarComponent,
     StudentsListComponent,
     EditstudentComponent,
+    AddcourseComponent,
   ],
   imports: [
     BrowserModule,

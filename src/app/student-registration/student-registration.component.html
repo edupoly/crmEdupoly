@@ -1,22 +1,24 @@
 <div class="p-5" [formGroup]="studentForm">
-    <div class="mb-3">
+    <div class="form-floating mb-3">
+        <input formControlName="fullname" placeholder="sdf" type="text" class="form-control" id="fullname">
         <label for="fullname" class="form-label">Full Name</label>
-        <input formControlName="fullname" type="text" class="form-control" id="fullname">
     </div>
-    <div class="mb-3">
-        <label for="phonenumber" class="form-label">Phone Number</label>
-        <input  formControlName="phonenumber" type="text" class="form-control" id="phonenumber">
+    <div class="form-floating mb-3">
+        <input  formControlName="phonenumber" type="text" placeholder="sdf" class="form-control" id="phonenumber">
+        <label for="phonenumber" >Phone Number</label>
+
     </div>
-    <div class="mb-3">
+    <div class="form-floating mb-3">
+        <input formControlName="email" type="text" placeholder="sdfsdf" class="form-control" id="email">
         <label for="email" class="form-label">Email</label>
-        <input formControlName="email" type="text" class="form-control" id="email">
     </div>
     
-    <div class="mb-3">
-        <label for="course" class="form-label">Course</label>
-        <input formControlName="course" type="text" class="form-control" id="course">
+    <div class="form-floating mb-3">
+        <select formControlName="course" class="form-select">
+            <option [value]="course['title']" *ngFor="let course of allcourses">{{course.title}}</option>
+        </select>
+        <label for="floatingSelect">Course</label>
     </div>
-    
     <div class="form-floating">
         <textarea formControlName="remarks" class="form-control" placeholder="Leave a comment here" id="remarks" style="height: 100px"></textarea>
         <label for="remarks">Remarks</label>

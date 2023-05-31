@@ -1,0 +1,15 @@
+<div class="p-5" [formGroup]="newCourseForm">
+    <div class="form-floating mb-3">
+        <input formControlName="title" placeholder="title" type="text" class="form-control" id="title">
+        <label for="title" class="form-label">Course Title</label>
+    </div>
+    <div class="form-floating mb-3">
+        <input  formControlName="price" type="text" placeholder="price" class="form-control" id="price">
+        <label for="price" >Price</label>
+
+    </div>
+    
+    <div class="text-center">
+        <button (click)="addCourse()" type="button" class="btn btn-primary mt-3" >Add Course</button>
+    </div>
+</div>
